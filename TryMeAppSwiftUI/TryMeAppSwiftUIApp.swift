@@ -11,7 +11,7 @@ import SwiftUI
 struct TryMeAppSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(targetValue: 11, currentValue: 0)
+            ContentView(currentValue: 0, result: 11)
         }
     }
 }
