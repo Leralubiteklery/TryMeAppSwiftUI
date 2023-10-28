@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var targetValue = Int.random(in: 1...100)
     @State private var alertPresented = false
-    @State var currentValue: Int
+    @State var currentValue: Double
     @State var result: Int
     
     var body: some View {
@@ -18,30 +18,30 @@ struct ContentView: View {
             Text("Move slider as close to \(targetValue) as possible")
             HStack {
                 Text("0")
-                CustomSliderView(currentValue: $currentValue)
+                CustomSliderView(
+                    currentValue:$currentValue,
+                    alpha: computeScore(),
+                    color: .red
+                )
                 Text("100")
             }
             .padding()
             Button("Try me!") {
-                result = computeScore()
                 alertPresented.toggle()
             }
-            .alert("Your score:", isPresented: $alertPresented) {
-                Button("OK") {}
-            } message: {
-                Text("\(result)")
+            .alert("Your score:", isPresented: $alertPresented,actions: {}) {
+                Text(computeScore().formatted())
             }
-            Button("Start over", action: startOver)
-                .padding()
+            Button("Start over") {
+                targetValue = Int.random(in: 1...100)
+                currentValue = Double.random(in: 1...100)
+            }
+            .padding()
         }
     }
     
-    func startOver() {
-        targetValue = Int.random(in: 1...100)
-    }
-    
-    func computeScore() -> Int {
-        let difference = abs(targetValue - currentValue)
+    private func computeScore() -> Int {
+        let difference = abs(targetValue - lround(currentValue))
         return 100 - difference
     }
 }
