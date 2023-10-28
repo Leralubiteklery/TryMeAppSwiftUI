@@ -11,7 +11,7 @@
 		EDD47C132AE9752100F61062 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD47C122AE9752100F61062 /* ContentView.swift */; };
 		EDD47C152AE9752200F61062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD47C142AE9752200F61062 /* Assets.xcassets */; };
 		EDD47C182AE9752200F61062 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD47C172AE9752200F61062 /* Preview Assets.xcassets */; };
-		EDD47C1F2AE98BCA00F61062 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD47C1E2AE98BCA00F61062 /* Slider.swift */; };
+		EDD47C1F2AE98BCA00F61062 /* CustomSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD47C1E2AE98BCA00F61062 /* CustomSliderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,7 @@
 		EDD47C122AE9752100F61062 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EDD47C142AE9752200F61062 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDD47C172AE9752200F61062 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		EDD47C1E2AE98BCA00F61062 /* Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
+		EDD47C1E2AE98BCA00F61062 /* CustomSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			children = (
 				EDD47C102AE9752100F61062 /* TryMeAppSwiftUIApp.swift */,
 				EDD47C122AE9752100F61062 /* ContentView.swift */,
-				EDD47C1E2AE98BCA00F61062 /* Slider.swift */,
+				EDD47C1E2AE98BCA00F61062 /* CustomSliderView.swift */,
 				EDD47C142AE9752200F61062 /* Assets.xcassets */,
 				EDD47C162AE9752200F61062 /* Preview Content */,
 			);
@@ -141,7 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDD47C132AE9752100F61062 /* ContentView.swift in Sources */,
-				EDD47C1F2AE98BCA00F61062 /* Slider.swift in Sources */,
+				EDD47C1F2AE98BCA00F61062 /* CustomSliderView.swift in Sources */,
 				EDD47C112AE9752100F61062 /* TryMeAppSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

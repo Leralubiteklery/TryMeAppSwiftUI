@@ -18,7 +18,7 @@ struct ContentView: View {
             Text("Move slider as close to \(targetValue) as possible")
             HStack {
                 Text("0")
-                Slider(currentValue: $currentValue)
+                CustomSliderView(currentValue: $currentValue)
                 Text("100")
             }
             .padding()
